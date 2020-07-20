@@ -10,4 +10,4 @@ Post a Slack notifications to a channel when an AWS ECS task goes into the `STOP
 
 3. Navigate to CloudWatch and then to `Events => Rules`. Create a new rule with the following:
 
-![CloudWatch Events Rule](images/cloudwatch-events-rule.png)
+![CloudWatch Events Rule](images/cloudwatch-rule.png)
