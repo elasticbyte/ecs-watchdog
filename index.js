@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
     const stoppedReason = event.detail.stoppedReason;
 
     if(lastStatus === "STOPPED") {
-        const message = `_[${account}]_ *${service}* in ${region} is *STOPPED*.\n\n*Reason:* ${stoppedReason}. Please investigate.`;
+        const message = `_[${account}]_ *${service}* in ${region} is *STOPPED*.\n\n*Reason:* ${stoppedReason}.`;
         console.error(message);
 
         await webhook.send({
