@@ -1,7 +1,7 @@
 {
   "name": "ecs-deploy-watchguard",
   "version": "1.0.0",
-  "description": "Post a Slack notifications to a channel when an AWS ECS task goes into STOPPED status",
+  "description": "Post a Slack notifications to a channel when an AWS ECS task goes into the `STOPPED` status",
   "repository": {
     "type": "git"
   },
