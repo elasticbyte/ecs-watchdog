@@ -17,14 +17,14 @@ exports.handler = async (event, context) => {
     const lastStatus = event.detail.lastStatus;
     const stoppedReason = event.detail.stoppedReason;
 
-    if(lastStatus === "STOPPED") {
-        const message = `_[${account}]_ *${service}* in ${region} is *STOPPED*.\n*Reason:* ${stoppedReason}.`;
+    if(lastStatus === 'STOPPED') {
+        const message = `_[${account}]_ task *${service}* in ${region} is *STOPPED*.\n*Reason:* ${stoppedReason}.`;
         console.error(message);
 
         await webhook.send({
             text: message
         });
     } else {
-        console.log(`[${account}] ${service} in ${region} is ${lastStatus}`);
+        console.log(`[${account}] task ${service} in ${region} is ${lastStatus}`);
     }
 };
