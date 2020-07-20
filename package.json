@@ -1,0 +1,24 @@
+{
+  "name": "ecs-deploy-watchguard",
+  "version": "1.0.0",
+  "description": "Post a Slack notifications to a channel when an AWS ECS task goes into STOPPED status",
+  "repository": {
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint --exclude ./node_modules .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Keller",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "12.16.1"
+  },
+  "dependencies": {
+    "@slack/webhook": "^5.0.3"
+  },
+  "devDependencies": {
+    "jshint": "2.11.0"
+  }
+}
