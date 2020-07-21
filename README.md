@@ -1,6 +1,6 @@
 # ecs-deploy-watchguard
 
-Post a Slack notification to a channel when an AWS ECS task goes into the `STOPPED` status.
+Post a Slack notification to a channel when an AWS ECS task goes into an unexpected `STOPPED` status.
 
 # Installation
 
