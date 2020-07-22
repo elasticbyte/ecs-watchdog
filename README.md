@@ -16,7 +16,7 @@ A project by [Elastic Byte](https://elasticbyte.net). Built with :heart: in :gui
 
 ## Support, Bugs, And Feature Requests
 
-Create issues here in GitHub (https://github.com/elasticbyte/terraform-gatsby-aws/issues).
+Create issues here in GitHub (https://github.com/elasticbyte/ecs-deploy-watchguard/issues).
 
 ## License & Legal
 
