@@ -12,7 +12,7 @@ A project by [Elastic Byte](https://elasticbyte.net). Built with :heart: in :gui
 
 3. Navigate to CloudWatch and then to `Events => Rules`. Create a new rule with the following:
 
-![CloudWatch Events Rule](images/cloudwatch-rule.png)
+![CloudWatch Events Rule](images/cloudwatch-rule.jpg)
 
 ## Support, Bugs, And Feature Requests
 
