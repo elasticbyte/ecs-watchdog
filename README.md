@@ -1,4 +1,4 @@
-# ecs-deploy-watchguard
+# ecs-watchdog
 
 Post a Slack notification to a channel when an AWS ECS task goes into an unexpected `STOPPED` status.
 
@@ -6,7 +6,7 @@ A project by [Elastic Byte](https://elasticbyte.net). Built with :heart: in :gui
 
 ## Installation
 
-1. Create a AWS Lambda function named `ecs-deploy-watchguard` using the Node.js 12.X runtime. Set the basic setting timeout to something reasonable like `10 seconds` from the default to allow for Slack API slowness.
+1. Create a AWS Lambda function named `ecs-watchdog` using the Node.js 12.X runtime. Set the basic setting timeout to something reasonable like `10 seconds` from the default to allow for Slack API slowness.
 
 2. Create a webhook in Slack and set the environment variable `SLACK_WEBHOOK_URL` in the AWS Lambda function.
 
@@ -16,7 +16,7 @@ A project by [Elastic Byte](https://elasticbyte.net). Built with :heart: in :gui
 
 ## Support, Bugs, And Feature Requests
 
-Create issues here in GitHub (https://github.com/elasticbyte/ecs-deploy-watchguard/issues).
+Create issues here in GitHub (https://github.com/elasticbyte/ecs-watchdog/issues).
 
 ## License & Legal
 
