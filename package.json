@@ -13,12 +13,12 @@
   "author": "Justin Keller",
   "license": "UNLICENSED",
   "engines": {
-    "node": "12.16.1"
+    "node": "12.20.1"
   },
   "dependencies": {
-    "@slack/webhook": "^5.0.3"
+    "@slack/webhook": "5.0.3"
   },
   "devDependencies": {
-    "jshint": "2.11.0"
+    "jshint": "2.12.0"
   }
 }
