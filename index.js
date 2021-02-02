@@ -19,10 +19,10 @@ exports.handler = async (event, context) => {
     const stoppedReason = event.detail.stoppedReason;
 
     if(lastStatus === 'STOPPED' && stopCode) {
-        console.error(`[acct: ${account}] task ${service} in ${region} STOPPED unexpectedly. Reason: ${stoppedReason}.`);
+        console.error(`[acct: ${account}] task ${service} in ${region} STOPPED unexpectedly with code ${stopCode}. Reason: ${stoppedReason}.`);
 
         await webhook.send({
-            text: `_[acct: ${account}]_ task *${service}* in ${region} *STOPPED* unexpectedly.\n\t*Reason:* ${stoppedReason}.`
+            text: `_[acct: ${account}]_ task *${service}* in ${region} *STOPPED* unexpectedly with code ${stopCode}.\n\t*Reason:* ${stoppedReason}.`
         });
     } else {
         console.log(`[acct: ${account}] task ${service} in ${region} is ${lastStatus}.`);
