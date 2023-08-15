@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
     const stopCode = event.detail.stopCode || null;
     const stoppedReason = event.detail.stoppedReason;
 
-    // stopCode = ServiceSchedulerInitiated is normal and expected. Caused by deployments of the service.
+    // stopCode == ServiceSchedulerInitiated is normal and expected. Caused by deployments of the service.
     if(lastStatus === 'STOPPED' && stopCode !== 'ServiceSchedulerInitiated') {
         console.error(`[acct: ${account}] service ${service} in ${region} STOPPED unexpectedly with code ${stopCode}. Reason: ${stoppedReason}.`);
 
